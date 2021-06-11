@@ -1,0 +1,247 @@
+.contact {
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 10px;
+
+    box-shadow: 1px 1px 50px 0 rgba(0, 0, 0, .125);
+
+    text-align: center;
+}
+
+.contact > .inner {
+    width: 100%;
+    padding: 15px;
+}
+
+.contact > .inner .title {
+    margin: 0 0 10px;
+
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: .5px;
+}
+
+.contact > .add-button {
+    display: block;
+
+    width: 100%;
+
+    padding: 20px;
+
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+
+    background-color: forestgreen;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.contact > .add-button:hover {
+    background-color: green;
+}
+
+.contact-item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.contact-item > .info {
+    padding-left: 10px;
+
+    text-align: left;
+}
+
+.contact-item .name {
+    margin: 0 0 5px;
+
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.contact-item .age {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.contact-item + .contact-item {
+    margin-top: 20px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+.contact-item > .action {
+    text-align: center;
+}
+
+.contact-item > .action .delete {
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: red;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.contact-item > .action .delete:hover {
+    color: darkred;
+}
+
+.detail {
+    text-align: center;
+}
+
+.detail .name {
+    margin: 15px 0 5px;
+
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.detail .age {
+    margin: 0;
+
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.detail button.close:hover {
+    background-color: #fafafa;
+}
+
+.detail .edit-form-wrapper {
+    padding: 0;
+    max-height: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .3s ease-in-out;
+}
+
+.detail .edit-form-wrapper.open {
+    padding: 15px 0 0;
+    opacity: 1;
+    visibility: visible;
+
+    max-height: 1000px;
+}
+
+.form {
+    width: 100%;
+    text-align: left;
+}
+
+.form .form-group {
+    width: 100%;
+}
+
+.form .form-group > label {
+    display: block;
+    margin: 0 0 3px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.form .form-group > input {
+    display: block;
+    width: 100%;
+
+    padding: 5px;
+
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 6px;
+    outline: none;
+
+    font-size: 14px;
+
+    background-color: #fff;
+}
+
+.form .form-group + .form-group {
+    margin-top: 15px;
+}
+
+.form .submit {
+    margin-top: 30px;
+    padding: 5px 12px;
+
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 6px;
+    outline: none;
+
+    text-transform: uppercase;
+    font-size: 12px;
+
+    background-color: #fff;
+
+    transition: .2s;
+
+    cursor: pointer;
+}
+
+.delete-confirmation {
+    text-align: center;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+button.modal-btn {
+    margin-top: 30px;
+    padding: 5px 12px;
+
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 6px;
+    outline: none;
+
+    text-transform: uppercase;
+    font-size: 12px;
+
+    background-color: #fff;
+
+    transition: .2s;
+
+    cursor: pointer;
+}
+
+button.modal-btn + .modal-btn {
+    margin-left: 5px;
+}
+
+button.modal-btn.green {
+    border: 1px solid forestgreen;
+    background-color: forestgreen;
+    color: #fff;
+}

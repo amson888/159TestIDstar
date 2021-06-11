@@ -1,0 +1,29 @@
+version: "3.8"
+services: 
+  backend-coding-test:
+    container_name: backend-coding-test
+    build: .
+    platform: "linux/x86_64"
+    environment: 
+      PORT: 3011
+      WAIT_HOSTS: mongo-db:27017
+    ports: 
+      - 3011:3011
+    networks:
+      - backend-network        
+    volumes: 
+      - .:/backend-coding-test
+  mongo-db:
+    container_name: mongo-db
+    image: mvertes/alpine-mongo:latest
+    platform: "linux/x86_64"
+    environment: 
+      MONGO_INITDB_DATABASE: YOUR_NAME    
+    volumes: 
+      - mongodb-data:/data/db
+    networks:
+      - backend-network
+networks: 
+  backend-network:
+volumes: 
+  mongodb-data:
